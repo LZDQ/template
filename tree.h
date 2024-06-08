@@ -96,3 +96,4 @@ namespace Tree {
 		dfs(rt);
 	}
 }
+using namespace Tree;

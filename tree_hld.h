@@ -10,7 +10,7 @@ inline void adde(int u, int v){
 #define TREE_HLD_DFN // This will traverse heavy son first. Also used in segment tree id
 #define TREE_HLD_STORE_CH // Store sons into a vector ch[u]
 #define TREE_HLD_STORE_LINK // Store the link into hl[top[u]]
-namespace Tree {
+namespace TreeHLD {
 	/*
 	 * Tree data structure in a namespace. Implementing Heavy-Link Decomposition.
 	 * Supports LCA in O(log n).
@@ -132,3 +132,4 @@ namespace Tree {
 		return x;
 	}
 }
+using namespace TreeHLD;
