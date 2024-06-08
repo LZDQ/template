@@ -42,6 +42,7 @@ namespace Tree {
 			if(v==fa[u]) continue;
 			fa[v] = u;
 			dep[v] = dep[u] + 1;
+			dfs(v);
 			siz[u] += siz[v];
 			if(!son[u] || siz[v] > siz[son[u]])
 				son[u] = v;
@@ -97,7 +98,7 @@ namespace Tree {
 			adde(x, y);
 			adde(y, x);
 		}
-		fa[rt] = rt;
+		fa[rt] = 0;
 		dep[rt] = TREE_HLD_DEP;
 #ifdef TREE_HLD_DFN
 		dfn_count = 0;

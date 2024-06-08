@@ -53,6 +53,7 @@ namespace Tree {
 #ifdef TREE_DEP
 			dep[v] = dep[u] + 1;
 #endif
+			dfs(v);
 #ifdef TREE_SIZ
 			siz[u] += siz[v];
 #endif
@@ -85,7 +86,7 @@ namespace Tree {
 			adde(x, y);
 			adde(y, x);
 		}
-		fa[rt] = rt;
+		fa[rt] = 0;
 #ifdef TREE_DEP
 		dep[rt] = TREE_DEP;
 #endif
