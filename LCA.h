@@ -6,6 +6,7 @@ inline void adde(int u,int v){
 	h[u]=cnte;
 }
 
+typedef unsigned long long u64;
 namespace LCA {
 	// Get the edge from n and above. Call LCA::init() to init, then lca(x, y) to get lca
 	const int B=64, MAXB=MAXN/B+2;

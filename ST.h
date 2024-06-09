@@ -1,3 +1,4 @@
+typedef unsigned long long u64;
 namespace ST {
 	// Store the array in ST::n and ST::a, and then call ST::init().
 	const int B=64, MAXB=MAXN/B+2;
