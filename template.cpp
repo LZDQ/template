@@ -15,6 +15,7 @@ typedef long long ll;
 typedef pair<int, int> pr;
 
 const int MAXN=2e5+5;
+int n, a[MAXN];
 int main(){
 	int _; scanf("%d", &_);
 	while(_--){
