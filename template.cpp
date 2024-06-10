@@ -9,7 +9,7 @@
 #include <random>
 #include <chrono>
 using namespace std;
-mt19937 rng(chrono::system_clock::now().time_since_epoch().count());
+mt19937 rnd(chrono::system_clock::now().time_since_epoch().count());
 // shuffle(begin, end, rng)
 typedef long long ll;
 typedef pair<int, int> pr;
